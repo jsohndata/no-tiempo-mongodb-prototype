@@ -1,7 +1,7 @@
 {
-  "name": "mongo-prototype",
+  "name": "bootstrap-prototype",
   "version": "0.1.0",
-  "homepage": "https://jsohndata.github.io/mongodb-prototype/",
+  "homepage": "https://jsohndata.github.io/bootstrap-prototype/",
   "private": true,
   "dependencies": {
     "dotenv": "^16.0.3",
