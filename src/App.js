@@ -8,6 +8,7 @@ import './styles/App.css';
 function App() {
   return (
     // Using HasRouter for Gh-page. 
+    // Seems there is an issue with BrowserRouter and Gh-page.
     // !!! Normally BrowserRouter would be used. !!!
     <HashRouter> 
       <Routes>

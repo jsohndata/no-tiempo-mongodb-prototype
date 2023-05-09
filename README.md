@@ -1,1 +1,2 @@
-# Mongo Prototype
+# Rapid Functional Prototype (MongoDB + React.js)
+A model that is fully operational and showcases all CRUD functionalities, with the frontend implemented using React.js and the database powered by MongoDB.

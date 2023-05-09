@@ -1,4 +1,4 @@
-import AppLayout from "../layout/AppLayout.jsx";
+import AppLayout from "../layout";
 import About from "../components/About/";
 
 export default function Homepage() {
