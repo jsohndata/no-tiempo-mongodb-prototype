@@ -6,17 +6,36 @@ import Panel from "./Panel.jsx";
 export default function Listing() {
   const [data, setData] = useState("");
   const [sortOrder, setSortOrder] = useState("-_id");
+  const [filterType, setFilterType] = useState("");
+  const [filterValue, setFilterValue] = useState("");
   const navigate = useNavigate();
 
   useEffect(() => { 
-    handleList(sortOrder); 
-  }, [sortOrder]);
+    handleList(sortOrder, filterType, filterValue); 
+  }, [sortOrder, filterType, filterValue]);
 
 
   // Sort
   /* *********************** */
   const handleSortAsc = () => setSortOrder("_id");
   const handleSortDesc = () => setSortOrder("-_id");
+  
+
+  // Filter
+  /* *********************** */
+  const handleFilter = (e) => {
+    const {value} = e.target;
+
+    if (value === "all") {  
+      setFilterType("");
+      setFilterValue("");
+      return;
+    }
+    
+    setFilterType("when");
+    setFilterValue(value);
+  }
+
 
   // Go To Form
   /* *********************** */
@@ -28,7 +47,14 @@ export default function Listing() {
   // Get List
   /* *********************** */
   const handleList = async(sortOrder) => {
-    const response = await fetch(`https://notiempo.lol/api/plants?sort=${sortOrder}`, {
+
+    const apiUrl = (filterType && filterValue)
+        ? `https://notiempo.lol/api/plants/filter/${filterType}/${filterValue}`
+        : `https://notiempo.lol/api/plants?sort=${sortOrder}`
+
+    console.log(apiUrl)
+
+    const response = await fetch(apiUrl, {
         method: "GET",
         headers: {
           "Content-Type": "application/json",
@@ -90,7 +116,16 @@ export default function Listing() {
       <div>
         <EleButton text={"Asc"} onClick={handleSortAsc} />
         <EleButton text={"Desc"} onClick={handleSortDesc} />
-        <EleButton text={"Add"} onClick={gotoAdd} />        
+
+        <select name="when" onChange={handleFilter}>
+          <option value="all">All</option>
+          <option value="monday">Monday</option>
+          <option value="tuesday">Tuesday</option>
+          <option value="wednesday">Wednesday</option>
+        </select>
+
+        <EleButton text={"Add"} onClick={gotoAdd} /> 
+        
       </div>
 
       

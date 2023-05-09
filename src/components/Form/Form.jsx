@@ -132,6 +132,24 @@ export default function Form() {
           onChange={handleInputChange} />
 
         <br />
+
+        <label htmlFor="name">When</label>
+        <input 
+          type="text" 
+          name="when"
+          value={formData.when || ""}
+          onChange={handleInputChange} />
+
+        <br />
+
+        <label htmlFor="name">Type</label>
+        <input 
+          type="text" 
+          name="type"
+          value={formData.type || ""}
+          onChange={handleInputChange} />
+
+        <br />
         
         <button 
           type="submit"
