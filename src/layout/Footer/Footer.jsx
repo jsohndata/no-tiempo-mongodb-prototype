@@ -1,5 +1,4 @@
 
-import { HashLink } from "react-router-hash-link";
 import { Github } from "react-bootstrap-icons";
 
 export default function Footer() {
