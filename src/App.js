@@ -7,6 +7,8 @@ import './styles/App.css';
 
 function App() {
   return (
+    // Using HasRouter for Gh-page. 
+    // !!! Normally BrowserRouter would be used. !!!
     <HashRouter> 
       <Routes>
         <Route path='/' element={ <Homepage />} />
