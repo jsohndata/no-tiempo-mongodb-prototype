@@ -1,7 +1,7 @@
 {
   "name": "no-tiempo-mongodb-prototype",
   "version": "0.1.0",
-  "homepage": "https://jsohndata.github.io/no-tiempo-mongodb-prototype/",
+  "homepage": "https://jsohndata.github.io/no-tiempo-mongodb-prototype",
   "private": true,
   "dependencies": {
     "dotenv": "^16.0.3",
