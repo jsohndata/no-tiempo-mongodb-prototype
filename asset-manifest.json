@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/no-tiempo-mongodb-prototype/static/css/main.0e3f9da4.css",
+    "main.js": "/no-tiempo-mongodb-prototype/static/js/main.10e42aa1.js",
+    "index.html": "/no-tiempo-mongodb-prototype/index.html",
+    "main.0e3f9da4.css.map": "/no-tiempo-mongodb-prototype/static/css/main.0e3f9da4.css.map",
+    "main.10e42aa1.js.map": "/no-tiempo-mongodb-prototype/static/js/main.10e42aa1.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0e3f9da4.css",
+    "static/js/main.10e42aa1.js"
+  ]
+}

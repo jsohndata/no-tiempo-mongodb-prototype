@@ -1,0 +1,1 @@
+{"version":3,"file":"static/css/main.0e3f9da4.css","mappings":"AAAA,cACE,gBAAiB,CAEjB,UAAW,CADX,YAEF","sources":["styles/App.css"],"sourcesContent":["button, select {\n  font-size: 1.1rem;\n  padding: 10px;\n  margin: 3px;\n}\n"],"names":[],"sourceRoot":""}
