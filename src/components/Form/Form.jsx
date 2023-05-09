@@ -50,7 +50,7 @@ export default function Form() {
   
   return(
     <>
-      <h2>h2: Form</h2>
+      <h2>h2: Form {(id) ? "Update" : "Add"}</h2>
       <form onSubmit={handleForm}>
         <label htmlFor="name">Title</label>
         <input 
