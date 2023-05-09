@@ -5,7 +5,6 @@ import Form from './pages/Form.jsx';
 import Portfolio from './pages/Portfolio.jsx';
 import About from './pages/About.jsx';
 
-import 'react-toastify/dist/ReactToastify.css';
 import './styles/App.css';
 
 function App() {
