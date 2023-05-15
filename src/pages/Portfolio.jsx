@@ -1,11 +1,11 @@
 import AppLayout from "../layout";
-import Portfolio from "../components/Portfolio/";
+import Gallery from "../components/Gallery/";
 
 export default function Homepage() {
   
   return (
     <AppLayout>      
-      <Portfolio />
+      <Gallery />
     </AppLayout>
   );
 }
